@@ -14,4 +14,4 @@ https://medium.com/better-programming/how-to-make-search-fields-dynamic-in-djang
 
 ## Les champs dynamique
 
-https://pypi.org/project/drf-dynamic-fields/
+https://github.com/dbrgn/drf-dynamic-fields
