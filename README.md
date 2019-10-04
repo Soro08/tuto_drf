@@ -15,3 +15,9 @@ https://medium.com/better-programming/how-to-make-search-fields-dynamic-in-djang
 ## Les champs dynamique
 
 https://github.com/dbrgn/drf-dynamic-fields
+
+
+
+## EX:
+
+http://localhost:8000/polls/?fields=id,question,created_by.username&search=factor&search_fields=question
