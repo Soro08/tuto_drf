@@ -24,7 +24,7 @@ http://localhost:8000/polls/?fields=id,question,created_by.username&search=facto
 
 ## Docummentation
 
-### Swargger
+### 2- Swargger
 
 ```bash
 
@@ -48,8 +48,27 @@ schema_view = get_swagger_view(title='Polls API')
 # ...
 urlpatterns = [
     # ...
-    path(r'swagger-docs/', schema_view),
+    path('swagger-docs/', schema_view),
 ]
 
 
+```
+
+### 1- Coreapi
+
 ```bash
+
+pip install coreapi
+
+
+# urls.py
+
+from rest_framework.documentation import include_docs_urls
+# ...
+
+urlpatterns = [
+    # ...
+    path('docs/', include_docs_urls(title='Polls API')),
+]
+
+```
