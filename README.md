@@ -29,3 +29,28 @@ http://localhost:8000/polls/?fields=id,question,created_by.username&search=facto
 
 https://florimondmanca.github.io/djangorestframework-api-key/
 
+
+
+## Vue Js , Axios
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+```bash
+
+onload() {
+
+    //axios.defaults.xsrfCookieName = 'csrftoken'
+    //axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+
+
+    axios.get('url')
+        .then(response => {
+            console.log(response.data)
+
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+},
+```
