@@ -54,3 +54,29 @@ onload() {
         })
 },
 ```
+
+
+# Post vue js
+
+```bash
+
+submituser: function () {
+    axios.defaults.xsrfCookieName = 'csrftoken'
+    axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+    axios.post('http://127.0.0.1:8001/post', {
+        name: '' + this.name,
+        username: '' + this.username,
+        email: '' + this.email,
+        password: '' + this.password,
+        }).then(response => {
+
+            console.log(response)
+
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+}
+
+
+```
